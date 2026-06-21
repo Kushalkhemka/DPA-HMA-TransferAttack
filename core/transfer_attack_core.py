@@ -64,7 +64,7 @@ DPA_HMA_ENSEMBLE_SURROGATES_BY_VICTIM = {
     'ArcFace': ('Facenet512', 'GhostFaceNet', 'VGG-Face'),
     'GhostFaceNet': ('Facenet512', 'ArcFace', 'VGG-Face'),
     'VGG-Face': ('Facenet512', 'ArcFace', 'GhostFaceNet'),
-    'IR152': ('Facenet512', 'ArcFace', 'VGG-Face'),
+    'IR152': ('Facenet512', 'ArcFace', 'GhostFaceNet'),
 }
 _dpa_hma_seeded = False
 
