@@ -739,8 +739,8 @@ def _dpa_hma_optimize(model, x, tgt_emb, attack_type, num_copies: int, num_iter:
 
 # Student-contributed attack integration:
 # DPA_HMA by Kushal Khemka (DTU Delhi)
-# Paper basis: Improving the Transferability of Adversarial Attacks on Face
-# Recognition with Diverse Parameters Augmentation (CVPR 2025)
+# Paper basis: Diverse Parameters Augmentation (DPA) from Improving the
+# Transferability of Adversarial Attacks on Face Recognition (CVPR 2025)
 def dpa_hma(model, x, tgt_emb, attack_type, num_copies: int = 8, num_iter: int = DPA_HMA_NUM_ITER):
     _ensure_dpa_hma_seed()
     tgt_emb = tf.nn.l2_normalize(tgt_emb, axis=1)
